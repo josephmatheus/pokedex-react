@@ -1,7 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { getPokemon, getPokemonDescription } from "../../services/pokeApi";
 import { Link } from "react-router-dom";
-import { GlobalStyle } from "../../App";
 import { typeColors } from "../../utils/pokemonTypes";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { ThemeContext } from "../../contexts/theme-context";
@@ -54,7 +53,6 @@ export const Details = () => {
 
   return (
     <>
-      <GlobalStyle />
       <Container theme={theme}>
         <DetailHeader theme={theme}>
           <div>
