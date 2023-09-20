@@ -21,8 +21,7 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+  height: 100vh;
   padding: 24px 16px;
   background-color: ${({ bgcolor }) => bgcolor};
 `;
