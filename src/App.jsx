@@ -1,15 +1,25 @@
-import { ThemeProvider } from "./contexts/theme-context";
+import { useContext } from "react";
+import { ThemeProvider, ThemeContext } from "./contexts/theme-context";
 import { AppRoutes } from "./pages/Routes/AppRoutes";
 
 import { createGlobalStyle } from "styled-components";
 function App() {
   return (
     <ThemeProvider>
-      <GlobalStyle />
-      <AppRoutes />
+      <AppContent />
     </ThemeProvider>
   );
 }
+
+const AppContent = () => {
+  const { theme } = useContext(ThemeContext);
+  return (
+    <>
+      <GlobalStyle theme={theme}/>
+      <AppRoutes />
+    </>
+  );
+};
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -25,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     height: 100vh;
-    background-color: #f7f7f7;
+    background-color: ${({ theme }) => theme.background};
   }
   
   a {
