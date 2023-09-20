@@ -5,22 +5,27 @@ Este repositório contém uma aplicação de exemplo chamada "Pokédex React". O
 ## Screenshots 🖼
 
 *Homepage light theme*
+
 ![Homepage light theme](./public/homepage-light-theme.png)
 
 ---
 *Homepage dark theme*
+
 ![Homepage dark theme](./public/homepage-dark-theme.png)
 
 ---
 *Card hover effect*
+
 ![Hover effect](./public/hover-effect.png)
 
 ---
 *Details page light theme*
+
 ![Details page light theme](./public/detailspage-light-theme.png)
 
 ---
 *Details page dark theme*
+
 ![Details page dark theme](./public/detailspage-dark-theme.png)
 
 ---
